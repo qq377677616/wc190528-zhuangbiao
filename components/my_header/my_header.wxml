@@ -1,0 +1,9 @@
+<view class="my_header">
+  <view class="header_top" style="height:{{statusBarHeight}}px;line-height:{{statusBarHeight}}px;"></view>  
+  <view class="header_bottom" style="height:{{titleHeight}}px;line-height:{{titleHeight}}px;width:100%">
+    <view class="icon"  bindtap="back_one" mode="widthFix"><image src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/zb_back.png" /></view>
+    <!-- <view class="icon" wx:if="{{btnIcon === 'home'}}" bindtap="back_home"></view> -->
+    {{title}}
+  </view> 
+</view>
+<!-- <view style='width:100%;height:{{statusBarHeight}}px;'></view> -->

@@ -1,0 +1,8 @@
+<view>
+       <my-header title="支付完成" btnIcon="home" bind:headerBack="headerBack"></my-header>
+        <view class='zhanweis'></view>
+        <view>
+            <image mode="widthFix" src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/paySuccess.png" class="success"></image>
+            <text class="select_order" bindtap="selectOrder">查看订单</text>
+        </view>
+</view>

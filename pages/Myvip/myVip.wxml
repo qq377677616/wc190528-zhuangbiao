@@ -1,0 +1,20 @@
+<view>
+       <my-header title="我的会员" btnIcon="home" bind:headerBack="headerBack"></my-header>
+        <view class='zhanweis'></view>
+        <view class='vipBanal'>
+                  <image mode="widthFix" src="{{title_img}}" class='title_img'></image>
+                  <image mode='widthFix' src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/V1.png" class='logs'></image>
+                   <view class='rightBox'>
+                       <view>
+                         <text class='fhtxt'>{{nickName}}</text>
+                         <image mode='widthFix' src='http://game.flyh5.cn/resources/game/wechat/file/zbtool/useVip.png' class='vipBtn'></image>  
+                       </view>
+                       <view>
+                          <text class="timetxt">孵画器相框装裱工具VIP:{{vip_time}}</text>
+                       </view>
+                   </view>
+        </view>
+        <view>
+            <image mode="widthFix" src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/vipInfo.png" class='vipinfo'></image>
+        </view>
+</view>

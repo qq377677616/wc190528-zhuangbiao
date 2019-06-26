@@ -1,0 +1,6 @@
+<view>
+   <my-header title="关于孵画器" btnIcon="home" bind:headerBack="headerBack"></my-header>
+    <!-- <view class='zhanweis'></view> -->
+    <view class='h_zhanwei' style='height:40rpx;'></view>
+    <image mode='widthFix' src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/about_img.png" class="about"></image>
+</view>

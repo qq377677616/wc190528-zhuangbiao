@@ -1,0 +1,125 @@
+/* pages/shopAddress/shopAddress.wxss */
+.whole{
+      padding-bottom: 50rpx;
+}
+.hander{
+     position: fixed;
+     left: 0;
+     top: 0;
+     width:100%;
+     height: 80rpx;
+     background-color: #000000; 
+     line-height: 80rpx;
+     text-align: center;
+     /* margin-bottom: 60rpx; */
+     color: white;
+     font-size: 28rpx;
+     font-weight: 600;
+     z-index: 99
+}
+.zhanwei{
+      width: 100%;
+      height: 166rpx;
+}
+.addressBox{
+      height:224rpx;
+      width: 95%;
+      margin: 0 auto;
+      margin-top: 24rpx;
+      border-top: 1rpx solid #dedede;  
+      border-bottom: 1rpx solid #dedede;
+      padding: 20rpx 10rpx 30rpx 10rpx;
+      box-sizing: border-box; 
+      position: relative;  
+}
+.userInfo text{
+      font-size: 28rpx;  
+}
+.userInfo text:nth-child(2){
+       margin-left:54rpx; 
+}
+.addressTxt,.authorization{
+       font-size: 20rpx;
+       font-family:'微软雅黑';
+       color:#999999; 
+       padding-top: 24rpx;
+}
+.authorization text:nth-child(3){
+        display: block;
+        float: left;
+        line-height:50rpx; 
+        margin-left: 20rpx;
+}
+.authorization text:nth-child(4),.authorization text:nth-child(5){
+        display: block;
+        float: right;
+        padding: 8rpx 40rpx;
+        border-radius: 10rpx;
+        border: 1rpx solid #000;
+}
+.authorization text:nth-child(5){
+         margin-right:20rpx; 
+}
+.authorization image{
+         display: block;
+         float: left;
+         width: 20rpx;
+         margin-top: 15rpx;  
+}
+.newAdress{
+         width:588rpx;
+         height: 70rpx;
+         background-color: #000000;
+         color: #fff;
+         border-radius: 15rpx;
+         text-align: center;
+         line-height: 70rpx;
+         font-size:30rpx;
+         bottom: 108rpx; 
+         position: absolute;
+         left: 50%;
+         transform: translateX(-50%);
+         /* margin: 0 auto; */
+         /* margin-top: 100rpx; */
+}
+.bor{
+         border-top: 1px solid #000;
+         border-bottom: 1px solid #000;
+}
+.selectImg{
+         position: absolute;
+         width: 30rpx;
+         right: 20rpx;
+         top: 20rpx;
+}
+.hide{
+         display: none !important;
+}
+.show{
+        display: block !important;
+}
+.col{
+      color: #000;
+}
+.noAddress{
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      color: #999999;
+      font-size: 28rpx;
+}
+.newbtn{
+       margin: 0;
+      position: absolute;
+      bottom: 110rpx;
+      left: 50%;
+      transform: translateX(-50%);
+}
+.c_position{
+    position: relative;
+    width: 100%;
+    min-height:1228rpx; 
+}

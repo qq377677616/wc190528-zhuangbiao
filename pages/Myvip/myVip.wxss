@@ -1,0 +1,54 @@
+/* pages/Myvip/myVip.wxss */
+.vipBanal{
+    width: 691rpx;
+    height: 346rpx;
+    margin: 0 auto;
+    /* background-color: red; */
+    background-image: url('http://game.flyh5.cn/resources/game/wechat/file/zbtool/vipBanal.png');
+    background-size: 100%;
+    margin-top: 40rpx;
+    padding-left:30rpx;
+    padding-top: 30rpx;
+    box-sizing: border-box;
+    position: relative;
+}
+.title_img{
+   width: 130rpx;
+   height: 131rpx !important;
+   border-radius: 50%;
+   border: 1px solid white;
+}
+.logs{
+   position: absolute;
+   width:  28rpx;
+   height: 28rpx;
+   left: 130rpx;
+   top: 133rpx;
+}
+.rightBox{
+  width: 475rpx;
+  /* height: 80rpx; */
+  float: right;
+  /* background-color: red; */
+ padding-top: 20rpx;
+}
+.fhtxt{
+  font-size: 34rpx;
+  color: white;
+}
+.vipBtn{
+   width: 127rpx;
+   margin-left: 28rpx;
+}
+.timetxt{
+   font-size: 23rpx;
+   color: white;
+
+}
+.vipinfo{
+   width: 100%;
+}
+/* .vipBanal{
+    width: 100%;
+    height: auto;
+} */

@@ -1,0 +1,20 @@
+<!--pages/Pay/paySelect/paySelect.wxml-->
+<!--pages/order/orderSubmit/orderSubmit.wxml-->
+<view class="container">
+  <view class="head_top">
+    <text bindtap="bankto"><block bindtap="bankto">=</block></text>
+    <text class="head_top_text">支付</text>
+  </view>
+  <view class="time_count">
+    <text class="time_explain">请在倒计时内完成支付，如未支付成功
+订单会自动取消，该商品将放入您的购物车</text>
+    <text class="time_num">30:20</text>
+  </view>
+  <view class="pay_way_list">
+     <view class="way_list_left">
+      <text class=""></text>
+      <text class="">微信支付</text>
+     </view>
+     <text class=""></text>
+  </view>
+</view>

@@ -1,0 +1,25 @@
+<view>
+     <!-- <view class="hander">
+        换绑手机号
+        <navigator delta='1' open-type ="navigateBack">
+        <image mode='widthFix' src='http://game.flyh5.cn/resources/game/wechat/file/zbtool/back.png' class='backIcon'></image>
+        </navigator>  
+    </view> -->
+     <my-header title="换绑手机号" btnIcon="home" bind:headerBack="headerBack"></my-header>
+    <view class='zhanweis'></view>
+    <view class="tip">您目前绑定的手机号是{{currPhone}}，请输入您希望绑定的手机号</view>
+    <view class='currPhone'>
+        <text>当前手机号  {{currPhone}}</text>
+    </view>
+    <view class="changeIphone">
+           <text>中国+86</text>
+           <input placeholder="请输入手机号码" bindinput='getvalue'  data-type='phone'></input>
+    </view>
+    <view class='changeIphone bor'>
+          <input type='text' placeholder='请输入验证码' data-type='code'  bindinput='getvalue' ></input>
+          <text class="getcode  {{isshow?'hide':'show'}}" bindtap='getcode' >获取验证码</text>
+          <text class="getcode {{isshow?'show':'hide'}}" >{{time}}s</text>
+          <!-- 13278888756 -->
+    </view> 
+    <view class='bindIphone' bindtap="bindIphone">绑定</view>
+</view>

@@ -1,0 +1,49 @@
+/* pages/Pay/paySelect/paySelect.wxss */
+.time_count{
+  height: 180rpx;
+	background-color: #ffffff;
+  margin-top: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 38rpx  0rpx 38rpx 0rpx;
+  flex-direction: column;
+}
+.time_explain{
+	font-family: MicrosoftYaHei;
+	font-size: 22rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #999999;
+}
+.time_num{
+  padding-top: 38rpx;
+  font-family: MicrosoftYaHei;
+	font-size: 33rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #000000;
+}
+.pay_way_list{
+  margin-top: 19rpx;
+  height: 90rpx;
+  display: flex;
+  padding: 0rpx 50rpx 0rpx 50rpx;
+	background-color: #ffffff;
+}
+.way_list_left{
+  flex: 1;
+  font-family: MicrosoftYaHei;
+	font-size: 24rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #000000;
+  display: flex;
+  align-items: center;
+}
+page{
+  background-color: #f7f8f8;
+}

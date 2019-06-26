@@ -1,0 +1,126 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.0",
+	"appid": "wx29447b351f931625",
+	"projectname": "%E8%A3%85%E8%A3%B1%E5%B7%A5%E5%85%B7",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 9,
+			"list": [
+				{
+					"id": -1,
+					"name": "orderlist",
+					"pathName": "pages/order/orderlist/orderlist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "newaddress",
+					"pathName": "pages/shopAddress/newAddress",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "收货地址页面 ",
+					"pathName": "pages/shopAddress/shopAddress",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "新增收货地址页面 ",
+					"pathName": "pages/shopAddress/newAddress",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "反馈页面",
+					"pathName": "pages/feedback/feedback",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "登录页面",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "vip",
+					"pathName": "pages/vipPages/vipIndex",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "导入",
+					"pathName": "pages/Import/import",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的vip",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 9,
+					"name": "订单详情",
+					"pathName": "pages/order/details/orderdetails",
+					"query": "order='2019061913420361013'",
+					"scene": null
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,104 @@
+<view class="whole {{freeimg?'vipbg':''}}">
+      <my-header title="vip会员" btnIcon="home" bind:headerBack="headerBack"></my-header>
+      
+     <view class="radiobox">    
+         <view class="ptuser">
+            <text class="{{freeimg?'vipcol':''}}"  bindtap="freebtn" data-type='free'>免费账户</text> 
+            <image mode="widthFix" src="{{freeimg?imgs[0]:imgs[1]}}" bindtap="freebtn" data-type='free'></image>
+         </view>
+         <view class="vipuser">
+             <image mode="widthFix" src="{{freeimg?imgs[1]:imgs[0]}}" bindtap="freebtn" data-type='vip'></image>
+             <text class="{{freeimg?'vipcol':''}}" bindtap="freebtn" data-type='vip'>VIP账户</text>
+         </view>  
+     </view>
+     <view class="cardbox">
+        <view class="freetxt" wx:if="{{!freeimg}}">
+            免费账户权限
+        </view>
+        <view class="freetxt" wx:elif="{{freeimg}}">
+            vip账户权限
+        </view>
+        <view class="infoList">
+            <text>装裱功能</text> 
+            <text>使用权限</text> 
+        </view>
+        <view class="infoList col">
+            <text>更换外框</text> 
+            <text wx:if="{{!freeimg}}">部分</text>
+            <text wx:if="{{freeimg}}">全部</text> 
+        </view>
+        <view class="infoList col">
+            <text>更换卡纸</text> 
+           <text wx:if="{{!freeimg}}">部分</text>
+            <text wx:if="{{freeimg}}">全部</text> 
+        </view>
+        <view class="infoList col">
+            <text>卡纸大小</text> 
+            <text wx:if="{{!freeimg}}">部分</text>
+            <text wx:if="{{freeimg}}">全部</text> 
+        </view>
+        <view class="infoList col">
+            <text>更换背景</text> 
+           <text wx:if="{{!freeimg}}">部分</text>
+            <text wx:if="{{freeimg}}">全部</text> 
+        </view>
+         <view class="infoList col" wx:if="{{freeimg}}">
+            <text>更换场景</text> 
+            <text>全部</text> 
+        </view>
+        <view class="infoList col">
+            <text>缩放</text> 
+            <text>是</text> 
+        </view>
+        <image mode="widthFix" src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/zbtool_12.png" class="searveImg"></image>
+        <view class="infoList col">
+            <text>640*640px</text> 
+            <text>是</text> 
+        </view>
+        <view class="infoList col">
+            <text>1280*1280px</text> 
+            <text>是</text> 
+        </view>
+        <view class="infoList col" wx:if="{{freeimg&&isOther}}">
+            <text>2560*2560px</text> 
+            <text>是</text> 
+        </view>
+        <view class="other {{isOther?'show':'hide'}}">
+              <image mode="widthFix" src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/zbtool_13.png" class="searveImg"></image>
+            <view class="infoList col">
+                <text>水印</text> 
+                <text>有</text> 
+            </view>
+            <view class="moretxt">更多内容尽请期待</view>
+        </view>
+       
+        <view class="lookmore" bindtap="lookmore">{{morebtn}}</view>
+     </view>
+     <text class="vipPrice {{freeimg?'vipcol':''}}">VIP会员价格</text>
+     <view wx:for="{{vipMoney}}" class="VIPbtn {{freeimg?'bgbtn':''}}" bindtap="selectPrice" data-money="{{item}}" wx:key="{{item}}" hover-class="{{freeimg?'vip_bg':'hover_bg'}}">
+       <text>￥{{item}}.00</text>
+       <view>{{viptxt[index]}}</view>
+     </view>
+<!--     <view class="VIPbtn {{freeimg?'bgbtn':''}}" bindtap="selectPrice" data-money="28">-->
+<!--       <text>￥28.00</text>-->
+<!--       <text>季度会员</text>-->
+<!--     </view>-->
+<!--     <view class="VIPbtn vipbg {{freeimg?'yearbg':''}}" bindtap="selectPrice" data-money="98">-->
+<!--       <text>￥98.00</text>-->
+<!--       <text>年会员</text>-->
+<!--     </view>-->
+</view>
+<view class="zhezhao {{showPrice?'show':'hide'}}">
+     <view class="paybox">
+        <image mode="widthFix" src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/zbtool_14.png" class='closeImg' bindtap="closePay"></image>
+        <text class='needPay'>需付款</text>
+        <view class='moneybox'>
+            <text>需支付</text>
+            <text class='money'>￥{{activeMy}}.00</text>
+        </view>
+        <view class="bor">
+            <image mode="widthFix" src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/zbtool_16.png" class="payWay"></image>
+        </view>
+        <view class="goPay" bindtap="pay">确认支付</view>
+      </view>
+</view>

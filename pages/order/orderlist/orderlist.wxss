@@ -1,0 +1,156 @@
+/* pages/orderlist/orderlist.wxss */
+
+.order_top{
+  height: 60rpx;
+  align-items: center;
+  display: flex;
+  background-color: #fff;
+}
+.order_num{
+  font-family: MicrosoftYaHei;
+	font-size: 24rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #000000;
+      flex: 1;
+      padding-left: 49rpx;
+}
+.order_time{
+	font-family: MicrosoftYaHei;
+	font-size: 24rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #999999;
+  /*flex: 1;*/
+  padding-right: 28rpx;
+  text-align: right;
+}
+.order_goodsc{
+  background-color: #f5f5f5;
+  display: flex;
+  padding: 22rpx 49rpx;
+}
+.goods_img{
+  width: 120rpx;
+	height: 120rpx;
+}
+.order_title{
+  font-family: MicrosoftYaHei;
+	font-size: 24rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #000000;
+  padding: 5rpx;
+}
+.order_right{
+  display: flex;
+  flex-direction: column;
+  padding-left: 21rpx;
+  font-size: 24rpx;
+  flex: 1;
+}
+.order_rule{
+  font-family: MicrosoftYaHei;
+	font-size: 18rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #999999;
+}
+.order_bottom{
+  display: flex;
+}
+.order_price{
+  font-family: MicrosoftYaHei;
+	font-size: 24rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #c92a22;
+}
+.order_count{
+  font-family: MicrosoftYaHei;
+	font-size: 22rpx;
+	font-weight: normal;
+  text-align: right;
+  flex: 1;
+	letter-spacing: 0px;
+	color: #999999;
+}
+.list_order{
+  margin: 20rpx 0rpx;
+  display: block;
+  overflow: hidden;
+  
+}
+.order_option_text:last-child{
+  margin-right: 0rpx;
+}
+
+.order_list_bottom{
+  background-color: #fff;
+  padding-bottom: 28rpx;
+  position: relative;
+}
+.order_option
+{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 28rpx;
+}
+.order_option_text{
+  margin-right: 10rpx;
+  width: 126rpx;
+	height: 50rpx;
+  font-family: MicrosoftYaHei;
+	font-size: 22rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #999999;
+	border-radius: 10rpx;
+	border: solid 1px #999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order_pay_info{
+  display: block;
+  padding: 20rpx 28rpx;
+  text-align: right;
+  font-family: MicrosoftYaHei;
+	font-size: 22rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #000000;
+}
+
+page{
+  background-color: #f5f5f5;
+}
+.lineContact{
+  position: absolute;
+  right: 171rpx;
+  bottom: 30rpx; 
+  width: 126rpx;
+  height: 50rpx;
+  background-color: red;
+  text-align: center;
+  line-height: 50rpx;
+  opacity: 0; 
+}
+.noAddress{
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      color: #999999;
+      font-size: 28rpx;
+}

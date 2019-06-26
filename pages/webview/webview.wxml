@@ -1,0 +1,2 @@
+<!-- <my-header title="vip会员" btnIcon="home" bind:headerBack="headerBack"></my-header> -->
+<web-view src="{{h5Url}}" bindmessage="bindmessage"></web-view>

@@ -1,0 +1,47 @@
+<!--pages/orderlist/orderlist.wxml-->
+<view class="container">
+  <my-header title="我的订单" btnIcon="home" bind:headerBack="headerBack"></my-header>
+  <view class='zhanweis'></view>
+  <scroll-view
+    scroll-y
+    bindscrolltoupper="upper"
+    bindscrolltolower="lower"
+    bindscroll="scroll"
+    scroll-into-view="{{toView}}"
+    scroll-top="{{scrollTop}}"
+  >
+    <view wx:for="{{orderList}}" class="list_order" wx:key="{{orderList.order_id}}">
+      <view class="order_top">
+        <text class="order_num">订单号：{{item.order_id}}</text>
+        <text class="order_time">{{item.addtime}}</text>
+      </view>
+      <view class="order_goodsc">
+        <block >
+          <view >
+            <image class="goods_img" src="{{item.good_img}}" />
+          </view>
+        </block >
+        <view class="order_right">
+          <text class="order_title">装饰画装裱定制-{{item.order_id}}</text>
+          <!-- ￥{{item.price/100}} -->
+          <text class="order_rule">画框：{{item.edge}} 尺寸：{{item.size}}cm  </text>
+           <!-- ￥{{item.price/100}} -->
+          <text class="order_rule">工艺：{{item.craft}}  尺寸：{{item.size}}cm </text>
+          <view class="order_bottom">
+            <text class="order_price">￥{{item.price/100}}</text>
+            <text class="order_count">x{{item.num}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="order_list_bottom">
+        <text class="order_pay_info">共2件作品  已付款：￥{{item.order_price}}</text>
+        <view class="order_option">
+          <contact-button class='lineContact'></contact-button>
+          <text class="order_option_text">在线客服</text>
+          <text class="order_option_text" bindtap='goDetail' data-order="{{item.order_id}}">查看详情</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+ <view wx:if='{{noorder}}' class="noAddress">暂无订单</view>
+</view>

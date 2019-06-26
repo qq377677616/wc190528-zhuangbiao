@@ -1,0 +1,65 @@
+<view class="container" >
+  <showModal container="{{showModal}}" bindoperation="operation"></showModal>
+  <loginModal container="{{loginModal}}" bindcancelBtn="cancelBtn"></loginModal>
+  <my-header title="首页" btnIcon="home" bind:headerBack="headerBack" style="display:none"></my-header>
+  <!-- 左侧滑动 -->
+  <view wx:if='{{ifleftmenu}}' class="{{leftmenu ? 'left_menu_show left_menu_Container' :'left_menu_Container left_menu_hide' }}" >
+    <!-- 遮罩内容  -->
+    <view class="left_more" bindtap="moreStatus" data-n="0"></view>
+    <!-- 菜单内容 -->
+    <view class="left_list">
+      <image class="head_img" src="{{t_img}}" bindtap='goPerson'></image>
+      <text class="head_name" >{{nickname}}</text>
+      <text class="user_grade {{is_vip==0?'':'bg'}}" wx:if="{{mycode!=''}}">{{viplog}}</text>
+      <text class="user_grade" wx:if="{{mycode==''}}" bindtap="goLogin">{{viplog}}</text>
+      <view class='meun_text' bindtap="setImage">
+        <block>开始孵画</block>
+      </view>
+      <view class='meun_text' bindtap='notOpen'>
+        <block>孵卵器艺术社交电商</block>
+      </view>
+      <view class='meun_text' bindtap='goVip'>
+        <block>开通VIP</block>
+      </view>
+      <view class='meun_text linkbtn'>
+        <contact-button class='lineContact'></contact-button>
+        <block>在线客服</block>
+      </view>
+      <!-- <navigator url="/orderlist" > -->
+        <view class='meun_text' bindtap='goOrderlist'>
+          <block>我的订单</block>
+        </view>
+      <!-- </navigator> -->
+      <view class='meun_text'  bindtap='goFeed'>
+        <block>反馈</block>
+      </view>
+      <!-- <navigator url="http://game.flyh5.cn/resources/game/wechat/file/zbtool/feedback" > -->
+        <view class='meun_text' bindtap='goAbout'>
+            <block>关于</block>
+        </view>
+      <!-- </navigator> -->
+        <view class="link-txt">www.fhqart.com</view>
+    </view>
+  </view>
+   <!-- <text>更换画芯</text> -->
+  <!-- 右侧内容 -->
+  <view class="container_right">
+    <!-- <button class='pop_btn' plain="true"
+open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber">获取用户手机号</button> -->
+    <view class="head-icon" bindtap="moreStatus" data-n="1">
+      <image class="gengduo" src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/gengduo.png" ></image>
+    </view>
+    <text class="logos">{{cardNum}}</text>
+    <!-- <image  src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/logo.png" ></image> -->
+    <text class="logo_text">{{cardTxt}}</text>
+    <!-- <image class="logo_text" src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/logo_text.png" ></image> -->
+    <image class="xk_img centImg" src="{{borImg}}" ></image>
+    <image class="xk_img outbor" src="{{borImg3}}" ></image>
+    <view  class='xk_img three_bg' style='background-color:{{borImg2}}'></view>
+    <view class="start_enter" bindtap="setImage">孵 画</view>
+    <text class="start_text">三分画  七分裱</text>
+  </view>
+  <image mode="widthFix" src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/mic1.png" class="micIcon" bindtap="bindPlay"></image>
+   <image mode="widthFix" src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/mic1.png" class="micIcon" bindtap="bindPlay"></image>
+</view>
+<view class='bgChange' style='background-image: url({{borImg4}})'></view>

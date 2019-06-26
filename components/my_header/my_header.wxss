@@ -1,0 +1,6 @@
+.my_header{text-align: center;color:#fff;font-size: 24rpx;position: fixed;z-index: 9999;width: 100%}
+.header_top{height:40rpx;line-height: 40rpx;background: white;}
+.header_bottom{height:96rpx;line-height: 96rpx;background: #000;font-size: 30rpx;position: relative;}
+.header_bottom .icon{width:40rpx;height:40rpx;position: absolute;left:20rpx;top:calc(50% - 
+20rpx);font-size: 0;}
+.header_bottom .icon image{width:100%;height:100%;}

@@ -1,0 +1,306 @@
+/* pages/order/orderSubmit/orderSubmit.wxss */
+.Delivery_to{
+  padding: 45rpx 50rpx;
+  font-family: MicrosoftYaHei;
+	font-size: 24rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #999999;
+}
+
+.user_address{
+	background-color: #ffffff;
+  padding: 54rpx 48rpx;
+  display: flex;
+  align-items: center;
+}
+
+.user_address_left{
+  flex:1;
+}
+
+.user_info_basic{
+  font-family: MicrosoftYaHei;
+	font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #000000;
+}
+
+.user_info_basic:last-child{
+  padding-left: 50rpx;
+}
+
+.user_address_top{
+  padding-bottom: 10rpx;
+}
+.user_address_bottom{
+}
+#submit_order{
+  width: 220rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	height: 88rpx;
+	background-color: #000000;
+  color: #fff;
+  border-radius: 0px;
+  font-family: MicrosoftYaHei;
+	font-size: 30rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #ffffff;
+}
+.user_address_text{
+  font-family: MicrosoftYaHei;
+	font-size: 20rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #000000;
+}
+
+.order_top{
+  height: 60rpx;
+  align-items: center;
+  display: flex;
+  background-color: #fff;
+}
+.order_num{
+  font-family: MicrosoftYaHei;
+	font-size: 24rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #000000;
+  flex: 1;
+  padding-left: 49rpx;
+}
+.order_time{
+	font-family: MicrosoftYaHei;
+	font-size: 24rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #999999;
+  flex: 1;
+  padding-right: 28rpx;
+  text-align: right;
+}
+.order_goodsc{
+  background-color: #f5f5f5;
+  display: flex;
+  padding: 22rpx 49rpx;
+}
+.goods_img{
+  width: 120rpx;
+	height: 120rpx;
+}
+.order_title{
+  font-family: MicrosoftYaHei;
+	font-size: 24rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #000000;
+  padding: 5rpx;
+}
+.order_right{
+  display: flex;
+  flex-direction: column;
+  padding-left: 21rpx;
+  font-size: 24rpx;
+  flex: 1;
+}
+.order_rule{
+  font-family: MicrosoftYaHei;
+	font-size: 18rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #999999;
+}
+.order_bottom{
+  display: flex;
+}
+.order_price{
+  font-family: MicrosoftYaHei;
+	font-size: 24rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #c92a22;
+}
+.order_count{
+  font-family: MicrosoftYaHei;
+	font-size: 22rpx;
+	font-weight: normal;
+  text-align: right;
+  flex: 1;
+	letter-spacing: 0px;
+	color: #999999;
+}
+.order_goods{
+  margin-top: 30rpx;
+  background-color: #fff;
+  padding-bottom: 28rpx;
+}
+.goods_nums{
+  height: 80rpx;
+  margin: 26rpx 0rpx 19rpx 0rpx;
+	background-color: #ffffff;
+}
+.customize{
+  padding:  28rpx 48rpx 28rpx 56rpx;
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  margin-top: 26rpx;
+  margin-bottom: 26rpx;
+}
+.customize_left{
+  font-family: MicrosoftYaHei;
+	font-size: 22rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #000000;
+  flex: 1;
+}
+.customize_right{
+  font-family: MicrosoftYaHei;
+	font-size: 24rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #000000;
+  display: flex;
+	height: 40rpx;
+}
+.button_input{
+  width: 50rpx;
+  height: 40rpx;
+  font-family: MicrosoftYaHei;
+	font-size: 24rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+	color: #000000;
+  min-height:0px;
+}
+.buttonnums{
+  height: 40rpx;
+  width: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	border: solid 1px #000000;
+  background-color: #fff;
+  border-radius: 0px;
+}
+.status_text{
+  font-family: MicrosoftYaHei;
+	font-size: 30rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #000000;
+}
+.status_num{
+  font-family: MicrosoftYaHei;
+	font-size: 30rpx;
+	font-weight: normal;
+	letter-spacing: 0px;
+	color: #ef403c;
+}
+.buttonnums::after{border:none}
+.customize_remark{
+  font-family: MicrosoftYaHei;
+	font-size: 20rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0px;
+	letter-spacing: 0px;
+	color: #000000;
+}
+.customize_title{
+  font-family: MicrosoftYaHei;
+	font-size: 22rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #000000;
+}
+.orderdetails{
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding:  0rpx 48rpx 0rpx 56rpx;
+  border-bottom: #eeeeee solid 1px;
+}
+.pay_list{
+  padding-top: 30rpx;
+  display: flex;
+}
+.pay_list:last-child{
+  padding-bottom: 30rpx;
+
+}
+.pay_total{
+  font-family: MicrosoftYaHei;
+	font-size: 22rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #999999;
+  flex: 1;
+}
+
+.pay_symbol{
+  font-family: MicrosoftYaHei;
+	font-size: 24rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #999999;
+}
+.pay_money{
+  font-family: MicrosoftYaHei;
+	font-size: 22rpx;
+	font-weight: normal;
+	letter-spacing: 0px;
+	color: #999999;
+}
+
+.order_total{
+  padding: 20rpx 48rpx 39rpx 56rpx;
+  display: flex;
+  background-color: #fff;
+}
+
+.order_total_title{
+  font-family: MicrosoftYaHei;
+	font-size: 22rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #000000;
+  flex: 1;
+}
+.order_total_num{
+  font-family: MicrosoftYaHei;
+	font-size: 22rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #000000;
+}
+page{
+  background-color: #f7f8f8;
+}

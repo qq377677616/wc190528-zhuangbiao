@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "showModal": "/components/showModal/showModal",
+    "loginModal": "/components/loginModal/showModal",
+    "my-header": "../../components/my_header/my_header"
+  }
+}

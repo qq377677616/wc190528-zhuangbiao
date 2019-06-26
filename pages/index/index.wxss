@@ -1,0 +1,295 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+/* 主体内容 */
+/* .container { */
+ /* width: 100%;
+ height: 100%;
+ background-size:100% 100%;  */
+
+/* } */
+.bgChange{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.head-icon{
+  color: "#000";
+  display: block;
+  padding: 25rpx 23rpx;
+  width: 50rpx;
+  position: fixed;
+  top: 80rpx;
+}
+page {
+    background-color: #E6E6E6;
+}
+.container_right{
+   position: relative; 
+   z-index: 888;
+  width: 100%;
+  height: 100%;
+  float: left; 
+}
+/*侧滑菜单*/
+.left_menu_Container{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+.left_menu_show{
+  animation: myfirst_show 0.65s;
+}
+.left_menu_hide{
+  animation: myfirst_hide 0.65s;
+}
+
+@keyframes myfirst_show
+{
+0% {left:-100%;}
+100% {left: 0px;}
+}
+
+@keyframes myfirst_hide
+{
+0% {left:0;}
+100% {left: -100%;display: none;}
+}
+
+.left_list{
+  width: 480rpx;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  z-index: 999;
+  top:40rpx;
+  padding-bottom: 100rpx;
+  box-sizing: border-box;
+}
+.head_img{
+  width: 180rpx;
+  display: block;
+  margin: 0px auto;
+  height: 180rpx;
+  margin-top: 40rpx;
+  margin-bottom: 31rpx;
+  border-radius: 50%;
+}
+.head_name{
+  text-align: center;
+  display: block;
+  font-family: MicrosoftYaHei;
+	font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #010101;
+  margin-bottom: 31rpx;
+}
+.user_grade{
+  width: 60px;
+	/* height: 30px; */
+	background-color: #000000;
+	border-radius: 10px;
+  padding: 6rpx 10rpx;
+  font-family: MicrosoftYaHei;
+	font-size: 22rpx;
+  text-align: center;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #ffffff;
+  margin: 0px auto;
+  display: block;
+  margin-bottom: 80rpx;
+}
+.meun_text{
+  font-family: MicrosoftYaHei;
+	font-size: 24rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #010101;
+  padding: 0rpx 0rpx 0rpx 26rpx;
+  border-bottom: #a0a0a0 solid 1px;
+  height: 100rpx;
+  line-height: 100rpx;
+  box-sizing: border-box;
+}
+.vip_user{
+  background-color: #ead6a3;
+}
+.left_more{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 888;
+}
+.logos{
+  width: 26rpx;
+  display: block;
+  margin: 0px auto;
+  height: 26rpx;
+  text-align: center;
+  font-size:18rpx;
+  color:white;
+  background-color: #000;
+  border-radius: 50%;  
+  position: absolute;
+  top: 190rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.start_enter{
+  /* letter-spacing: 8px; */
+  width: 140rpx;
+	height: 140rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+	border-radius: 50%;
+  font-family: MicrosoftYaHei;
+	font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	color: #fff;
+  background-color: #DD017C; 
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  bottom: 202rpx;
+  transform: translate(-50%);
+}
+.start_text{
+  font-family: MicrosoftYaHei;
+	font-size: 30rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #000000;
+  display: block;
+  text-align: center;
+  padding-top: 37rpx;
+  position: fixed;
+  left: 50%;
+  bottom: 120rpx;
+  transform: translate(-50%);
+}
+.gengduo{
+	width: 38rpx;
+	height: 30rpx;
+}
+.xk_img{
+  position: fixed;
+  width: 346rpx;
+	height: 346rpx;
+  /* margin: 124rpx auto; */
+  display: block;
+  left: 50%;
+  top: 320rpx;
+  transform: translate(-50%);
+  z-index: 9999;
+}
+.outbor{
+   top: 340rpx;
+   width: 500rpx;
+   height: 500rpx;
+}
+.logo_text{
+  width: 247rpx;
+  height: 45rpx;
+  display: block;
+  /* margin: 20rpx auto 0rpx auto;  */
+  text-align: center;
+  font-size: 36rpx;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 220rpx;
+}
+.three_bg{
+  background-color:white;
+  width:448rpx;
+  height:458rpx;
+  top:358rpx;
+  z-index: 9;
+}
+.link-txt{
+  padding-left: 30rpx;
+  font-size: 22rpx;
+  margin-top: 20rpx;
+}
+.lineContact{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  line-height: 100rpx;
+  font-size: 80rpx;
+  padding-left: 60rpx;
+  box-sizing: border-box;
+  opacity: 0;
+}
+.linkbtn{
+  position: relative;
+}
+.bg{
+  background-color: #ead6a3;
+  color: #000;
+}
+.centImg{
+   top: 415rpx !important;
+}
+.micIcon{
+  position: fixed;
+  top: 126rpx;
+  right: 18rpx;
+  width: 38rpx;
+  z-index: 999;
+  height: auto;
+  animation: mic 3s linear infinite;
+}
+@keyframes mic{
+      0%{
+          transform: rotate(0deg);
+      }
+      100%{
+         transform: rotate(360deg);
+      }
+}
+.video{
+     width: 100%;
+     height: 400rpx;
+     z-index: -1;
+     position: absolute;
+     left: 0;
+     top: 0;
+     opacity: 0;
+}

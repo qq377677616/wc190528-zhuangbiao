@@ -1,0 +1,26 @@
+<view class='whole'>
+   <my-header title="收货地址" btnIcon="home" bind:headerBack="headerBack"></my-header>
+   <view class="zhanweis"></view>
+   
+   <view class="c_position">
+            <view class='addressBox {{selectId==item.id?"bor":""}}' wx:for="{{addressList}}" wx:key="item" bindtap='selectAddress'  data-addid='{{item.id}}'>
+                <view class='userInfo'>
+                  <text>{{item.recipient}}</text>
+                  <text>{{item.phone}}</text>
+                </view>
+                <view class='addressTxt'>
+                  <text>{{item.province}}{{item.city}}{{item.region}}{{item.detailed_address}}</text>
+                </view>
+                <view class='authorization'>
+                    <image mode='widthFix' class="{{item.default==1?'hide':'show'}}" src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/zbtool_29.png" bindtap='setDefault' data-addid='{{item.id}}'></image>
+                  <image mode='widthFix'  class="{{item.default==1?'show':'hide'}}" src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/selected.png" bindtap='setDefault' data-addid='{{item.id}}'></image>  
+                    <text bindtap='setDefault' data-addid='{{item.id}}' class="{{item.default==1?'col':''}}">默认地址</text>
+                    <text bindtap='delAddress' data-addid='{{item.id}}'>删除</text>
+                    <text bindtap='ediAddress' data-addid='{{item.id}}'  data-default='{{item.default}}'>编辑</text>
+                </view>
+                <image mode='widthFix' src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/selectImg.png" class="selectImg {{selectId==item.id?'show':'hide'}}"></image>
+            </view>
+             <view class="newAdress" bindtap='newAddress'>新建收货地址</view>
+   </view>
+            <view wx:if="{{addLength==0}}" class="noAddress">您还没添加收货地址</view>
+</view>

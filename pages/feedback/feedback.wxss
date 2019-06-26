@@ -1,0 +1,72 @@
+/* pages/feedback/feedback.wxss */
+.head_top{
+  height: 80rpx;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.head_top_text{
+  padding-right: 84rpx;
+  flex: 1;
+  text-align: center;
+  font-family: MicrosoftYaHei;
+	font-size: 30rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px; 
+	color: #ffffff;
+}
+.left_icon{
+  width: 38rpx;
+	height: 30rpx;
+  display: block;
+  padding: 25rpx 23rpx;
+}
+.feedback_text{
+  border-top: #eeeeee solid 1px;
+  margin: 89rpx 30rpx;
+  padding: 35rpx 19rpx;
+  font-family: MicrosoftYaHei;
+	font-size: 24rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+  border-bottom: #eeeeee solid 1px;
+}
+.feedback_text>textarea{
+  width: 100%;
+	color: #000000;
+}
+.num_size{
+  display: block;
+  text-align: right;
+  font-family: MicrosoftYaHei;
+	font-size: 24rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #999999;
+}
+.feedback_bt{
+  width: 590rpx;
+	height: 70rpx;
+	background-color: #000000;
+	border-radius: 15rpx;
+  font-family: MicrosoftYaHei;
+	font-size: 30rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 110rpx;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+.feedback_bt_color{
+  background-color: #a0a0a0;
+}

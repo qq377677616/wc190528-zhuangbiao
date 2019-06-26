@@ -1,0 +1,97 @@
+/* pages/changePhone/changePhone.wxss */
+.hander{
+     position: fixed;
+     left: 0;
+     top: 0;
+     width:100%;
+     height: 80rpx;
+     background-color: #000000; 
+     line-height: 80rpx;
+     text-align: center;
+     /* margin-bottom: 60rpx; */
+     color: white;
+     font-size: 28rpx;
+     font-weight: 600;
+}
+.tip{
+    margin: 0 auto;
+     width: 90%;
+     /* margin-top: 150rpx; */
+     /* text-align: center; */
+     font-size: 18rpx;
+     color: #999999; 
+     padding-left: 16rpx;
+}
+.currPhone{
+      width: 90%;
+      margin: 0 auto;
+      padding-left: 16rpx;
+      font-size: 24rpx;
+      color: #999999;
+      line-height: 90rpx;
+      border-top: 1rpx solid #999999;
+      margin-top: 10rpx;
+}
+.changeIphone{
+     width: 90%;
+     margin: 0 auto;
+     border-top: 1px solid #999999;
+     padding-left: 16rpx;
+    height: 90rpx;
+     display: flex;
+      align-items: center;
+}
+.changeIphone input{
+    display: inline-block;
+    width: 80%;
+    font-size: 24rpx;
+   
+}
+.changeIphone  text{
+    width: 20%;
+    display: inline-block;
+    font-size: 24rpx;
+     /* line-height: 90rpx; */
+}
+.getCode{
+  width: 100%;
+  line-height: 90rpx;
+  border-top: 1rpx solid #999999;
+}
+.getcode{
+  border: 1px solid #999999;
+  padding: 10rpx 8rpx;
+  border-radius: 20rpx;
+  text-align: center;
+}
+.bor{
+  border-bottom: 1rpx solid #999999;   
+}
+.bindIphone{
+  width: 80%;
+  /* margin: 0 auto; */
+  height: 72rpx;
+  line-height: 72rpx;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  position: absolute;
+  bottom: 116rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30rpx;
+  border-radius: 20rpx;
+}
+.show{ 
+  display: inline-block !important;
+}
+.hide{ 
+  display: none !important;
+}
+.backIcon{
+  display: block;
+  position: fixed;
+  width: 30rpx;
+  left:  26rpx;
+  top: 80rpx;
+}

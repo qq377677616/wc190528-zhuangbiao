@@ -1,0 +1,29 @@
+<view>
+      <my-header title="新增收货地址" btnIcon="home" bind:headerBack="headerBack"></my-header>
+      <view class="zhanweis"></view>
+    <view class="iptbox">
+        <text>收 货 人</text>
+        <input type="text" placeholder='请填写收货人' bindinput='getName' value='{{addressdel.recipient}}'></input>
+    </view>
+    <view class="iptbox">
+        <text>手机号码</text>
+        <input type="text" placeholder='请输入手机号码' bindinput='getvalue' value='{{addressdel.phone}}'></input>
+    </view>
+    <!-- <view class="iptbox">
+        <text>所在地区</text>
+        <text>选择地址</text>
+    </view> -->
+     <view class="rowinfo section iptbox">
+          <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+            <view class="picker">
+                <text>常住地</text> 
+                <text class="addressTxt">{{region}}</text>
+            </view>
+          </picker>
+    </view>
+    <view class="textarea">
+        <textarea placeholder="详细地址:如道路、门牌号、小区、楼栋号等" maxlength='60' bindinput='getContain' value='{{addressdel.detailed_address}}'></textarea>
+        <p>{{txtLen}}/60</p>
+    </view>
+    <view class="newAdress {{iptcheck?'checked':''}}" bindtap='searverAddress'>保存</view>
+</view>

@@ -1,0 +1,18 @@
+/* pages/Pay/succeed/succeed.wxss */
+.success{
+       width: 100%;
+       height: aoto;
+}
+.select_order{
+       width: 204rpx;
+       height: 74rpx;
+       position: absolute;
+       left: 50%;
+       top: 53%;
+       background-color: black;
+       color: white;
+       text-align: center;
+       transform: translate(-50%,-50%);
+       border-radius: 10rpx;
+       opacity: 0;
+}

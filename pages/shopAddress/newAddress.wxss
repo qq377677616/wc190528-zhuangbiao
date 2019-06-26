@@ -1,0 +1,87 @@
+.hander{
+     position: fixed;
+     left: 0;
+     top: 0;
+     width:100%;
+     height: 80rpx;
+     background-color: #000000; 
+     line-height: 80rpx;
+     text-align: center;
+     color: white;
+     font-size: 28rpx;
+     font-weight: 600;
+     z-index: 99
+}
+.zhanwei{
+      width: 100%;
+      height: 166rpx;
+}
+.iptbox{
+      width: 90%;
+      margin: 0 auto;
+      height: 90rpx;
+      display: flex;
+      border-top: 1rpx solid #dedede;
+      border-bottom: 1rpx solid #dedede;
+      font-size: 24rpx;
+      padding-left:20rpx;
+      margin-top: 20rpx; 
+      align-items: center;
+      box-sizing: border-box;
+}
+.iptbox text:nth-child(1){
+      width: 100rpx;
+      line-height: 90rpx;
+      flex-direction: row;
+      /* justify-content: space-between;  */
+      /* text-align: right; */
+      /* display: flex; */
+      justify-content:start;
+}
+.iptbox text:nth-child(2),.iptbox input:nth-child(2){
+      flex: 1;
+      margin-left: 50rpx;
+}
+.textarea{
+       width: 90%;
+       height:210rpx;
+       font-size: 24rpx;
+       margin: 0 auto;
+       border-top: 1rpx solid #dedede;
+       border-bottom: 1rpx solid #dedede;
+       margin-top: 20rpx; 
+       padding-top: 32rpx;
+       box-sizing: border-box;
+       position: relative;
+}
+.textarea textarea{
+      text-indent: 15rpx;
+      height:150rpx;
+      width: 95%;   
+}
+.textarea p{
+      position: absolute;
+      right: 20rpx;
+      bottom: 20rpx;
+      color: #999;
+}
+.newAdress{
+         width:588rpx;
+         height: 70rpx;
+         background-color: #A0A0A0;
+         color: #fff;
+         border-radius: 15rpx;
+         text-align: center;
+         line-height: 70rpx;
+         font-size:30rpx;
+         position: absolute;
+         left: 50%;
+         transform: translateX(-50%);
+         bottom: 108rpx; 
+}
+.addressTxt{
+         margin-left: 80rpx !important;
+}
+.checked{
+         background-color: #000000;
+}

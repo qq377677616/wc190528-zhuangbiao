@@ -1,0 +1,78 @@
+<view>
+      <my-header title="个人中心" btnIcon="home" bind:headerBack="headerBack"></my-header>
+        <view class='zhanweis'></view>
+    <!-- <view class='zwhander'></view>
+    <view class="hander">
+    <navigator delta='1' open-type ="navigateBack">
+        <image mode='widthFix' src='http://game.flyh5.cn/resources/game/wechat/file/zbtool/back.png' class='backIcon'></image>
+        </navigator>  
+        <text>个人资料</text>
+    </view> -->
+    <view class="titleimg" bindtap="openActionsheet">
+          <image mode='widthFix' src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/reback1.png" class='reback'></image>
+         <image class="t_img"  mode='widthFix' src="{{personInfo.header_img}}"></image>
+         <text class="changetxt">更换头像</text>
+    </view>
+    <view class="rowinfo" bindtap="changeInfo" data-type='1'>
+          <text>昵称</text>
+          <text>{{personInfo.nickname}}</text>
+           <image mode='widthFix' src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/reback1.png" class='reback'></image>
+    </view>
+    <view class="rowinfo">
+          <text>孵画号</text>
+          <text>{{personInfo.unique_id}}</text>
+    </view>
+    <view class="rowinfo" bindtap='goChangeiphone'>
+          <text>绑定手机</text>
+          <text>{{personInfo.phone}}</text>
+          <image mode='widthFix' src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/reback1.png" class='reback'></image>
+    </view>
+    <view class="rowinfo" bindtap="changeInfo" data-type='2'>
+          <text>性别</text>
+          <text>{{currSex[personInfo.sex]}}</text>
+          <image mode='widthFix' src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/reback1.png" class='reback'></image>
+    </view>
+    <view class="rowinfo section">
+          <picker mode="region" style='color:red !important;'  bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+            <view class="picker">
+                <text>常住地</text> 
+                <text>{{region}}</text>
+            </view>
+          </picker>
+          <image mode='widthFix' src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/reback1.png" class='reback'></image>
+    </view>
+    <view class="rowinfo" bindtap='upAddress'>
+          <text>收货地址</text>
+          <!-- <text>孵画小子</text> -->
+          <image mode='widthFix' src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/reback1.png" class='reback'></image>
+    </view>
+    <view class="rowinfo section">
+           <picker mode="date" value="{{birthday}}" bindchange="bindDateChange" start="1888-09-01" end="2030-09-01" >
+            <view class="picker">
+                <text>生日</text> 
+                <text>{{birthday}}</text>
+            </view>
+          </picker>
+          <image mode='widthFix' src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/reback1.png" class='reback'></image>
+    </view>
+    <view class="updatabox {{popshow?'show':''}}">
+          <view class="updatapop">
+               <text class="uptxt">{{poptitle}}</text>
+               
+               <input placeholder="输入新的昵称限十字以内" class="{{type==1?'show':'hide'}}" bindinput='getNick' value="{{nickName}}"></input>
+               
+               <radio-group class="{{type==2?'show':'hide'}}" bindchange="radioChange">
+                  <radio value="1" checked="checked"/>
+                  <text>男</text>
+                  <radio value="2"/>
+                  <text>女</text>
+               </radio-group>
+               
+               <view class="footipt">
+                  <text class="cancel" bindtap="cancelEvent">取消</text>
+                  <text class="comfig" bindtap="comfirmEvent">确定</text>
+               </view>
+          </view> 
+          
+    </view>
+</view>

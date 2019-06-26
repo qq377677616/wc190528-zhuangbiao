@@ -1,0 +1,147 @@
+.hander{
+   height:100rpx;
+   width: 100%;
+   background-color:#000; 
+}
+.hander text{
+   display: block;
+   width: 240rpx;
+   margin: 0 auto;
+   text-align: center;
+   line-height: 100rpx;
+   color: white;
+   font-size: 32rpx;
+}
+.titleimg{
+   width: 90%;
+   height: 204rpx;
+   border-bottom:1rpx solid #dedede;
+   margin: 0 auto; 
+   box-sizing: border-box;
+   padding-top: 40rpx;
+   padding-left: 20rpx;
+   position: relative;
+}
+.titleimg .t_img{
+   width: 130rpx;
+   height: 130rpx !important;
+   border-radius: 50%;
+   border:1rpx solid #dedede;
+   /* display: inline-block; */
+   float: left;
+   /* margin:50rpx 0rpx 0rpx 10rpx;  */
+}
+.rowinfo{
+   height:90rpx;
+   width: 90%;
+   margin: 0 auto;
+   border-bottom: 1rpx solid #dedede;
+   box-sizing: border-box;
+   padding-left: 20rpx;
+   position: relative;
+}
+.changetxt{
+   line-height: 146rpx; 
+   margin-left: 40rpx;
+   color: #888; 
+   font-size: 24rpx;
+   /* font-weight: 600; */
+}
+.rowinfo text:nth-child(1),.rowinfo text:nth-child(2){
+  display: inline-block;
+  font-size: 24rpx;
+  color: #888;
+  line-height: 90rpx;
+  width: 160rpx;
+}
+.rowinfo text:nth-child(2){
+  width: auto;
+  color: #222;
+}
+.updatabox{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color:rgba(0, 0, 0, 0.4);
+  display: none;
+}
+.updatabox .updatapop{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 70%;
+  height: 280rpx;
+  background-color: white;
+  padding-top:50rpx; 
+}
+.updatapop .uptxt{
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 30rpx;
+  color: #222;
+}
+.updatapop input,.updatapop radio-group{
+   font-size: 28rpx;
+   background-color: #eeeeee;
+   height: 70rpx;
+   display: block;
+   width: 90%;
+   margin: 0 auto;
+   text-indent: 16rpx;
+   margin-top: 40rpx; 
+   color: #999;  
+}
+.updatapop radio-group{
+   background-color: transparent;
+}
+.updatapop radio-group radio{
+   margin-left: 15%;
+}
+.footipt{
+    /* background-color: rebeccapurple; */
+    width: 100%;
+    height: 80rpx;
+    margin-top: 50rpx;
+    box-sizing: border-box;
+    padding-top: 16rpx;
+    border-top: 1rpx solid #dedede;
+}
+.footipt text{
+    display: block;
+    width:49.5%;
+    height:95%;
+    float: left;
+    text-align: center;
+    font-size: 30rpx;
+}
+.footipt .cancel{
+     border-right: 1rpx solid #dedede;
+     color: #999;
+}
+.reback{
+    display: block;
+    width: 30rpx;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background-color: red */
+}
+.show{
+     display: block !important;
+}
+.hide{
+     display: none !important; 
+}
+.backIcon{
+  display: block;
+  position: fixed;
+  width: 30rpx;
+  left:  26rpx;
+  top: 80rpx;
+}
+

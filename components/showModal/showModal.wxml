@@ -1,0 +1,12 @@
+<!--components/showModal/showModal.wxml-->
+<view class="showModal" wx:if="{{container.isShow}}">
+  <view class="showModal-box">
+    <view class="h3">{{container.title}}</view>
+    <view class="p">{{container.test}}</view>
+    <view class="btn">
+      <view class="cancel" data-type="0" bindtap='operation'>{{container.cancelText}}</view>
+      <button  open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber" style="color:{{container.color_confirm}}">{{container.confirmText}}</button>
+      <!-- <view data-type="1" bindtap='operation' style="color:{{container.color_confirm}}">{{container.confirmText}}</view> -->
+    </view>
+  </view>
+</view>

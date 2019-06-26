@@ -1,0 +1,24 @@
+<view>
+    <view class="l_hander" >
+        登录  
+    </view>
+     <image mode="widthFix" src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/logo.png" class="logo"></image> 
+     <view class="userbox">
+          <text class="hytxt">欢迎登录孵画器</text>
+          <view class="iptbox">
+              <input placeholder='请输入手机号' placeholder-class='pstyle' value='{{phone}}' bindinput='getvalue' data-type='phone'></input> 
+          </view>
+          <view class="iptbox2">
+              <input placeholder='请输入验证码'  placeholder-class='pstyle' data-type='code' bindinput='getvalue'></input> 
+              <text class="getcode {{isshow?'hide':'show'}}" bindtap="getcode">获取验证码</text>
+              <text class="getcode wid {{isshow?'show':'hide'}}">{{time}}s</text>
+          </view>
+
+          <image mode='widthFix' src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/noselect_1.png" class='noselect {{isWhole?"hide":"show"}}' bindtap='goReady'></image>
+          <image mode='widthFix' src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/select_1.png" class='noselect {{isWhole?"show":"hide"}}' bindtap='goReady'></image>
+
+          <text class="onready {{isWhole?'addbg':''}}" bindtap='goReady'>我已阅读并同意《孵画器网服务协议隐私条款》</text>
+          <button class="loginbtn {{isWhole?'btnadd':''}}" bindtap="goLogin">立即登录</button>
+     </view>
+     <image mode="widthFix" src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/login1.png" class="wxlogin"></image> 
+</view>

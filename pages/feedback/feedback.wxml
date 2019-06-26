@@ -1,0 +1,16 @@
+<!--pages/feedback/feedback.wxml-->
+<view class="container">
+    <my-header title="意见反馈" btnIcon="home" bind:headerBack="headerBack"></my-header>
+    <view class='zhanweis'></view>
+  <!-- <view class="head_top">
+        <image class="left_icon" src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/fh.png"></image>
+    <text class="head_top_text">意见反馈</text>
+  </view> -->
+  <view class="feedback_text">
+      <textarea placeholder="请输入您的意见反馈" maxlength="300" bindinput="textInput" value="{{text}}" auto-focus />
+      <text class="num_size">{{textSize}}/300</text>
+  </view>
+  <view bindtap="updata" class="{{textSize>0 ? 'feedback_bt ' : 'feedback_bt_color feedback_bt'}}" >
+    提交
+  </view>
+</view>

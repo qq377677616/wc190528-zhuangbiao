@@ -1,0 +1,77 @@
+<view class="container">
+<my-header title="我的订单" btnIcon="home" bind:headerBack="headerBack"></my-header>
+  <view class='zhanweis'></view>
+  <view class="Delivery_to">
+    <text>配送至</text>
+  </view>
+  <view class="user_address">
+    <view class="user_address_left">
+      <view class="user_address_top">
+        <text class="user_info_basic">{{usename}}</text>
+        <text class="user_info_basic">{{usephone}}</text>
+      </view>
+      <text class="user_address_text">{{useaddress}}</text>
+    </view>
+    <text class="user_address_icon"></text>
+  </view>
+  <view class="order_goods">
+      <view class="order_top">
+        <text class="order_num">订单号：{{orderDel.order_id}}</text>
+        <text class="order_time">{{orderDel.addtime}}</text>
+      </view>
+      <view class="order_goodsc">
+        <block >
+          <cover-view >
+            <cover-image class="goods_img" src="{{orderDel.good_img}}"/>
+          </cover-view>
+        </block >
+        <view class="order_right">
+          <text class="order_title">装饰画装裱定制-{{orderDel.order_id}}</text>
+          <text class="order_rule">画框：{{orderDel.edge}} 尺寸：{{orderDel.size}}cm </text>
+          <text class="order_rule">工艺：{{orderDel.craft}}  尺寸：{{item.size}}cm </text>
+          <view class="order_bottom">
+            <text class="order_price">￥{{orderDel.price/100}}</text>
+            <text class="order_count">x{{orderDel.num}}</text>
+          </view>
+        </view>
+      </view>
+  </view>
+  <view class="customize">
+      <text class="customize_left">定制数量</text>
+      <text class="customize_right">{{orderDel.num}}件</text>
+  </view>
+  <view class="customize">
+      <text class="customize_title">备注：</text>
+      <text class="customize_remark">{{orderDel.remark}}</text>
+  </view>
+  <view class="orderdetails">
+      <view class="pay_list">
+        <text class="pay_total">商品总计：</text>
+        <text class="pay_symbol">￥</text>
+        <text class="pay_money">{{orderDel.price/100}}</text>
+      </view>
+      <view class="pay_list">
+        <text class="pay_total">总装裱费：</text>
+        <text class="pay_symbol">￥</text>
+        <text class="pay_money">666</text>
+      </view>
+      <view class="pay_list">
+        <text class="pay_total">运费：</text>
+        <text class="pay_symbol">￥</text>
+        <text class="pay_money">{{orderDel.fare/100}}</text>
+      </view>
+  </view>
+  <view class="order_total">
+    <text class="order_total_title">订单总计：</text>
+    <text class="order_total_num">￥{{orderDel.order_price/100}}</text>
+  </view>
+  <view class="last_ending"  wx:if="{{orderDel.is_pay!=0}}">
+    <text class="last_ending_left">共{{orderDel.num}}件作品  已付款：</text>
+    <text class="last_ending_right">￥{{orderDel.order_price/100}}</text>
+  </view>
+  <view class="last_ending txtLeft"  wx:elif="{{orderDel.is_pay==0}}">
+    <text class="last_ending_left" >共{{orderDel.num}}件作品  未付款：</text>
+    <text class="last_ending_right">￥{{orderDel.order_price/100}}</text>
+    <text class='payMoney'  bindtap='payMoney'>支付</text>
+  </view>
+</view>
