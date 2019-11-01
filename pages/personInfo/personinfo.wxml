@@ -9,7 +9,7 @@
         <text>个人资料</text>
     </view> -->
     <view class="titleimg" bindtap="openActionsheet">
-          <image mode='widthFix' src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/reback1.png" class='reback'></image>
+         <image mode='widthFix' src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/reback1.png" class='reback'></image>
          <image class="t_img"  mode='widthFix' src="{{personInfo.header_img}}"></image>
          <text class="changetxt">更换头像</text>
     </view>

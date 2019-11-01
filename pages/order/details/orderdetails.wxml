@@ -28,7 +28,7 @@
         <view class="order_right">
           <text class="order_title">装饰画装裱定制-{{orderDel.order_id}}</text>
           <text class="order_rule">画框：{{orderDel.edge}} 尺寸：{{orderDel.size}}cm </text>
-          <text class="order_rule">工艺：{{orderDel.craft}}  尺寸：{{item.size}}cm </text>
+          <text class="order_rule">工艺：{{orderDel.craft}}</text>
           <view class="order_bottom">
             <text class="order_price">￥{{orderDel.price/100}}</text>
             <text class="order_count">x{{orderDel.num}}</text>
@@ -53,7 +53,7 @@
       <view class="pay_list">
         <text class="pay_total">总装裱费：</text>
         <text class="pay_symbol">￥</text>
-        <text class="pay_money">666</text>
+        <text class="pay_money">{{orderDel.fare/100}}</text>
       </view>
       <view class="pay_list">
         <text class="pay_total">运费：</text>
@@ -70,8 +70,8 @@
     <text class="last_ending_right">￥{{orderDel.order_price/100}}</text>
   </view>
   <view class="last_ending txtLeft"  wx:elif="{{orderDel.is_pay==0}}">
-    <text class="last_ending_left" >共{{orderDel.num}}件作品  未付款：</text>
+    <text class="last_ending_left" >共{{orderDel.num}}件作品  {{orderDel.is_pay==0?'未':'已'}}付款：</text>
     <text class="last_ending_right">￥{{orderDel.order_price/100}}</text>
-    <text class='payMoney'  bindtap='payMoney'>支付</text>
+    <text class='payMoney'  bindtap='payMoney' wx:if="{{orderDel.is_pay==0}}">支付</text>
   </view>
 </view>

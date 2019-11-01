@@ -224,8 +224,8 @@ Page({
     http.Post('index/get_user_info',dat,'post').then((res)=>{
         // console.log(res.data);
       let region = '';
-      res.data.data.header_img = !res.data.data.header_img ? wx.getStorageSync('wechartImg') : res.data.data.header_img;
-      res.data.data.nickname = !res.data.data.nickname ? wx.getStorageSync('wechartName') : res.data.data.nickname;
+		res.data.data.header_img = !res.data.data.header_img ? wx.getStorageSync('user_info').avatarUrl : res.data.data.header_img;
+		res.data.data.nickname = !res.data.data.nickname ? wx.getStorageSync('user_info').nickName : res.data.data.nickname;
       region = !res.data.data.province ? '' : res.data.data.province + ',' + res.data.data.city + ',' + res.data.data.region;
       res.data.data.birthday = !res.data.data.birthday ? '' : res.data.data.birthday;
         this.setData({

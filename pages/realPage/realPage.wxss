@@ -1,0 +1,12 @@
+/* pages/realPage/realPage.wxss */
+.whole{
+	width: 100vw;
+	height: 100vh;
+	background: center no-repeat;
+	background-size: cover;
+}
+.setoption{
+	width: 100%;
+	height: 1rpx !important;
+	opacity: 0;
+}

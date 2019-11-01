@@ -26,7 +26,7 @@
           <!-- ￥{{item.price/100}} -->
           <text class="order_rule">画框：{{item.edge}} 尺寸：{{item.size}}cm  </text>
            <!-- ￥{{item.price/100}} -->
-          <text class="order_rule">工艺：{{item.craft}}  尺寸：{{item.size}}cm </text>
+          <text class="order_rule">工艺：{{item.craft}}</text>
           <view class="order_bottom">
             <text class="order_price">￥{{item.price/100}}</text>
             <text class="order_count">x{{item.num}}</text>
@@ -34,7 +34,7 @@
         </view>
       </view>
       <view class="order_list_bottom">
-        <text class="order_pay_info">共2件作品  已付款：￥{{item.order_price}}</text>
+        <text class="order_pay_info">共{{item.num}}件作品  {{item.is_pay==0?'未付款':'已付款'}}：￥{{item.order_price}}</text>
         <view class="order_option">
           <contact-button class='lineContact'></contact-button>
           <text class="order_option_text">在线客服</text>

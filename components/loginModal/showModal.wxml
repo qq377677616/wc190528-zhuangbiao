@@ -5,7 +5,6 @@
     <view class="p">{{container.test}}</view>
     <view class="btn">
       <view class="cancel" data-type="0" bindtap='cancelBtn'>{{container.cancelText}}</view>
-      <button  open-type='getUserInfo' bindgetuserinfo="onGotUserInfo" style="color:{{container.color_confirm}}">{{container.confirmText}}</button>
       <!-- <view data-type="1" bindtap='operation' style="color:{{container.color_confirm}}">{{container.confirmText}}</view> -->
     </view>
   </view>

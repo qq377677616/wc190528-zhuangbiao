@@ -8,7 +8,7 @@ Page({
     data: {
         time: 300,//秒数
         isshow: false,
-        phone: '',//电话
+        phone:null,//电话
         code: '',//验证码
         isWhole: false,
       _statusBarHeight: wx.getStorageSync('_statusBarHeight'),
@@ -23,7 +23,7 @@ Page({
         let isReady = wx.getStorageSync('isready');
         let isPrivacy = wx.getStorageSync('isprivacy');
         this.setData({
-            phone: wx.getStorageSync('phone')
+            phone: wx.getStorageSync('w_phone')
         })
         if (isReady && isPrivacy) {
             this.setData({
@@ -168,7 +168,8 @@ Page({
                       title: res.data.msg,
                     })
                     if(res.data.msg=='登录成功'){
-                    wx.setStorageSync('mycode','yls')
+					wx.setStorageSync('w_phone','')
+					wx.setStorageSync("mycode",'mycode');
                     wx.setStorageSync('phone',this.data.phone);
                     wx.reLaunch({
                            url: '/pages/index/index',
@@ -184,10 +185,46 @@ Page({
         }
     },
     goReady() {
+		if(this.data.phone)wx.setStorageSync('w_phone', this.data.phone);
         if (!this.data.isWhole) {
             wx.navigateTo({
                 url: '/pages/agreement/agreement',
             })
         }
-    }
+    },
+	headerBack: function (e) {
+		var pageNum = getCurrentPages().length
+		if (e.detail.type === -1) {//返回到上一页
+			wx.navigateBack({
+				delta: 1
+			})
+		} else if (e.detail === 0) {//返回到首页
+			wx.navigateBack({
+				delta: pageNum
+			})
+		}
+	},
+	getPhoneNumber(e){
+		console.log(e);
+		let that = this;
+		wx.login({
+			success(res){
+				let dat = {
+					code:res.code,
+					iv:e.detail.iv,
+					ency: e.detail.encryptedData
+				}
+				console.log(res.code)
+				http.Post('index/decrypt_data', dat, 'post').then((res) => {
+					// console.log(res);
+					if(res.data.code==200){
+						that.setData({ phone: res.data.data.phone})
+						console.log(res.data.data.phone)
+						wx.setStorageSync("w_phone",res.data.data.phone);
+					}
+				})
+			}
+		})
+		
+	}
 })

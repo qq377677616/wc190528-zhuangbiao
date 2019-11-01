@@ -1,7 +1,5 @@
 <view>
-    <view class="l_hander" >
-        登录  
-    </view>
+     <my-header title="登录"  bind:headerBack="headerBack"></my-header>
      <image mode="widthFix" src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/logo.png" class="logo"></image> 
      <view class="userbox">
           <text class="hytxt">欢迎登录孵画器</text>
@@ -20,5 +18,8 @@
           <text class="onready {{isWhole?'addbg':''}}" bindtap='goReady'>我已阅读并同意《孵画器网服务协议隐私条款》</text>
           <button class="loginbtn {{isWhole?'btnadd':''}}" bindtap="goLogin">立即登录</button>
      </view>
-     <image mode="widthFix" src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/login1.png" class="wxlogin"></image> 
+	 <button  open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber" class="getphone">获取手机号码</button>
+     <image mode="widthFix" src="http://game.flyh5.cn/resources/game/wechat/file/zbtool/login1.png" class="wxlogin">
+	 	
+	 </image> 
 </view>

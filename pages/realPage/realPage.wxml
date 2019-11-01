@@ -1,0 +1,3 @@
+<view class="whole" style="background-image:url({{BASEIMG}}/kaji.jpg)">
+	<image mode="widthFix" src="{{item}}" class="setoption" wx:for="{{listImg}}" wx:key="item"></image>
+</view>

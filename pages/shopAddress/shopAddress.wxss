@@ -50,14 +50,14 @@
         line-height:50rpx; 
         margin-left: 20rpx;
 }
-.authorization text:nth-child(4),.authorization text:nth-child(5){
+.authorization text:nth-child(1),.authorization text:nth-child(2){
         display: block;
         float: right;
         padding: 8rpx 40rpx;
         border-radius: 10rpx;
         border: 1rpx solid #000;
 }
-.authorization text:nth-child(5){
+.authorization text:nth-child(2){
          margin-right:20rpx; 
 }
 .authorization image{

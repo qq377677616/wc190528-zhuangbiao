@@ -78,6 +78,17 @@
        top: 90%;
        transform: translate(-50%,-50%); 
 }
+.getphone{
+	width:204rpx;
+	height: 106rpx;
+	position: fixed;
+	left: 50%;
+	top: 90%;
+	transform: translate(-50%,-50%);
+	z-index: 99; 
+	background-color: transparent;
+	opacity: 0;
+}
 .getcode{
        float: right;
        font-size: 24rpx;

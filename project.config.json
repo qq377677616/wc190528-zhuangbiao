@@ -47,8 +47,12 @@
 			"currentL": -1,
 			"list": []
 		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
 		"miniprogram": {
-			"current": 9,
+			"current": 10,
 			"list": [
 				{
 					"id": -1,
@@ -118,6 +122,19 @@
 					"name": "订单详情",
 					"pathName": "pages/order/details/orderdetails",
 					"query": "order='2019061913420361013'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "realPage",
+					"pathName": "pages/realPage/realPage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "login",
+					"pathName": "pages/login/login",
 					"scene": null
 				}
 			]

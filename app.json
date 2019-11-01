@@ -1,32 +1,33 @@
 {
-  "pages": [
-    "pages/index/index",
-    "pages/Pay/succeed/succeed",
-    "pages/Myvip/myVip",
-    "pages/login/login",
-    "pages/personInfo/personinfo",
-    "pages/changePhone/changePhone",
-    "pages/shopAddress/editAddress",
-    "pages/shopAddress/newAddress",
-    "pages/shopAddress/shopAddress",
-    "pages/feedback/feedback",
-    "pages/agreement/agreement",
-    "pages/vipPages/vipIndex",
-    "pages/about/about",
-    "pages/privacy/privacy",
-    "pages/Pay/paySelect/paySelect",
-    "pages/order/orderSubmit/orderSubmit",
-    "pages/order/details/orderdetails",
-    "pages/order/orderlist/orderlist",
-    "pages/logs/logs",
-    "pages/webview/webview"
-  ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black",
-    "navigationStyle": "custom"
-  },
-  "sitemapLocation": "sitemap.json"
+	"pages": [
+		"pages/realPage/realPage",
+		"pages/index/index",
+		"pages/Pay/succeed/succeed",
+		"pages/Myvip/myVip",
+		"pages/login/login",
+		"pages/personInfo/personinfo",
+		"pages/changePhone/changePhone",
+		"pages/shopAddress/editAddress",
+		"pages/shopAddress/newAddress",
+		"pages/shopAddress/shopAddress",
+		"pages/feedback/feedback",
+		"pages/agreement/agreement",
+		"pages/vipPages/vipIndex",
+		"pages/about/about",
+		"pages/privacy/privacy",
+		"pages/Pay/paySelect/paySelect",
+		"pages/order/orderSubmit/orderSubmit",
+		"pages/order/details/orderdetails",
+		"pages/order/orderlist/orderlist",
+		"pages/logs/logs",
+		"pages/webview/webview"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "WeChat",
+		"navigationBarTextStyle": "black",
+		"navigationStyle": "custom"
+	},
+	"sitemapLocation": "sitemap.json"
 }

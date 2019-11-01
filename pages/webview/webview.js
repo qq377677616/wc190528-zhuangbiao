@@ -26,8 +26,8 @@ Page({
     //console.log(_userInfo)
 
     //let _h5Url = this.data.h5Url + '?userInfo=' + JSON.stringify(_userInfo)
-    let _h5Url = this.data.h5Url + '?nickName=' + wx.getStorageSync('nickname') + '&img=' + wx.getStorageSync('imgUrl') + '&openid=' + _open_session + '&isVip=' + wx.getStorageSync('is_vip') +'&uid='+wx.getStorageSync('uid')
-    // console.log(h5Url)
+	  let _h5Url = this.data.h5Url + '?nickName=' + wx.getStorageSync('nickname') + '&img=' + decodeURIComponent(wx.getStorageSync('imgUrl')) + '&openid=' + _open_session + '&isVip=' + wx.getStorageSync('is_vip') +'&uid='+wx.getStorageSync('uid')
+	  console.log(_h5Url)
     this.setData({
       h5Url: _h5Url
     })

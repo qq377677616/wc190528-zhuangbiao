@@ -33,6 +33,8 @@
   top: 0;
   width: 100%;
   height: 100%;
+  background: center no-repeat;
+  background-size: cover;
 }
 .head-icon{
   color: "#000";
@@ -88,6 +90,16 @@ page {
   padding-bottom: 100rpx;
   box-sizing: border-box;
 }
+.sethandimg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 99;
+	/* background-color: red; */
+	left: 0;
+	top: 0;
+	background-color: transparent;
+}
 .head_img{
   width: 180rpx;
   display: block;
@@ -96,6 +108,7 @@ page {
   margin-top: 40rpx;
   margin-bottom: 31rpx;
   border-radius: 50%;
+  position: relative;
 }
 .head_name{
   text-align: center;
@@ -206,13 +219,13 @@ page {
 .xk_img{
   position: fixed;
   width: 346rpx;
-	height: 346rpx;
+  height: 346rpx;
   /* margin: 124rpx auto; */
   display: block;
   left: 50%;
   top: 320rpx;
   transform: translate(-50%);
-  z-index: 9999;
+  z-index: 99;
 }
 .outbor{
    top: 340rpx;
@@ -232,11 +245,15 @@ page {
   top: 220rpx;
 }
 .three_bg{
-  background-color:white;
+ position: fixed;
   width:448rpx;
   height:458rpx;
   top:358rpx;
   z-index: 9;
+  background:no-repeat center;
+  background-size: cover;
+  left: 50%;
+  transform: translate(-50%);
 }
 .link-txt{
   padding-left: 30rpx;
@@ -265,7 +282,11 @@ page {
   color: #000;
 }
 .centImg{
-   top: 415rpx !important;
+   width: 370rpx;
+   height: 370rpx;
+   top: 405rpx !important;
+   transform: translateX(-49.5%);
+   z-index: 9;
 }
 .micIcon{
   position: fixed;
@@ -292,4 +313,7 @@ page {
      left: 0;
      top: 0;
      opacity: 0;
+}
+.setswiper{
+	height: 100vh;
 }
