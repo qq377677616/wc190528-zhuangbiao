@@ -142,7 +142,7 @@ Page({
     const innerAudioContext = wx.createInnerAudioContext()
     this.setData({ pb_audio: innerAudioContext})
 	this.data.pb_audio.autoplay = true
-	this.data.pb_audio.src = 'http://sc1.111ttt.cn:8282/2018/1/03m/13/396131226156.m4a?tflag=1546606800&pin=97bb2268ae26c20fe093fd5b0f04be80#.mp3';
+	  this.data.pb_audio.src = `${BASEIMG}zb_mic.mp3`;
 	this.data.pb_audio.loop = true;
     this.bindPlay()//默认播放
 
